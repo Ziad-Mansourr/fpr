@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>معاك في رحلة العلاج</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Readex+Pro:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="auth" hidden></div>
+<div id="app" class="app" hidden>
+  <aside class="side" aria-label="القائمة الرئيسية">
+    <a class="brand" href="#home">
+      <span class="mark" id="mark1"></span>
+      <span><b>معاك</b><span>في رحلة العلاج</span></span>
+    </a>
+    <nav id="sidenav" class="nav"></nav>
+    <div class="side-foot">المنصة مش بتشخّص ولا بتحدد علاج أو جرعات، ومش بديل عن دكتورك. كل محتوى طبي هنا بيراجعه مختصين.</div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <a class="mobile-brand" href="#home"><span class="mark" id="mark2"></span><b>معاك</b></a>
+      <div class="grow"></div>
+      <button class="sos" data-act="sos" aria-label="بطاقة الطوارئ"><svg class="ic" viewBox="0 0 24 24"><path d="M5 3.5h3.5l2 5-2.5 1.5a11 11 0 0 0 6 6l1.5-2.5 5 2V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2"/></svg><span>طوارئ</span></button>
+      <div style="position:relative">
+        <button class="iconbtn" data-act="bell" aria-label="التنبيهات" id="bellBtn"></button>
+        <div class="pop" id="bellPop" hidden></div>
+      </div>
+      <button class="avatar" data-go="profile" aria-label="حسابي" id="avatarBtn"></button>
+    </header>
+    <div id="roleBanner"></div>
+    <main id="view" class="view" tabindex="-1"></main>
+  </div>
+  <nav class="tabbar" id="tabbar" aria-label="التنقل"></nav>
+</div>
+<div class="toast-wrap" id="toasts" aria-live="polite"></div>
+<div id="print-root"></div>
+
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
